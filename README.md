@@ -52,9 +52,17 @@ sudo systemctl restart ssh
 
 bash <(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh) install
 
-5. Генерация ключей для Reality
+5.1 Генерация ключей для Reality
 
 /usr/local/bin/xray x25519
+
+5.2 Генерация UUID
+
+./xray uuid
+
+5.3 Генерация shortId
+
+openssl rand -hex 8
 
 6. Конфигурация Xray
 
